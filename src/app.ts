@@ -36,7 +36,7 @@ app.use(morgan("dev"));
 app.use(
   cors({
     origin: [
-      "https://e-com-frontend-ifqxhoosr-mayur-chauhan-project.vercel.app/",
+      "https://e-com-frontend-ifqxhoosr-mayur-chauhan-project.vercel.app",
     ],
     credentials: true,
   })
