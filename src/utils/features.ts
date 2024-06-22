@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose, { Document } from "mongoose";
 import { nodeCache } from "../app.js";
 import { Product } from "../models/product.js";
 import { InvalidateCacheProps, OrderItemType } from "../types/types.js";
@@ -12,7 +12,7 @@ export const connectDB = (uri: string) => {
     .catch((e) => console.log(`Database Connection Error ${e}`));
 };
 
-export const invalidatesCache =  ({
+export const invalidatesCache = ({
   product,
   order,
   admin,
